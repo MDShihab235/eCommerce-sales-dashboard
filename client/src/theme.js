@@ -22,9 +22,10 @@ export const tokensDark = {
     300: "#7a7f9d",
     400: "#4d547d",
     500: "#21295c",
-    600: "#191F45", // manually adjusted
+    600: "#193245", // manually adjusted
     700: "#141937",
     800: "#0d1025",
+    850: "090b1a",
     900: "#070812",
   },
   secondary: {
@@ -69,12 +70,12 @@ export const themeSettings = (mode) => {
             // palette values for dark mode
             primary: {
               ...tokensDark.primary,
-              main: tokensDark.primary[400],
-              light: tokensDark.primary[400],
+              main: tokensDark.primary[500],
+              light: tokensDark.primary[500],
             },
             secondary: {
               ...tokensDark.secondary,
-              main: tokensDark.secondary[300],
+              main: tokensDark.secondary[100],
             },
             neutral: {
               ...tokensDark.grey,
@@ -82,7 +83,7 @@ export const themeSettings = (mode) => {
             },
             background: {
               default: tokensDark.primary[600],
-              alt: tokensDark.primary[500],
+              alt: tokensDark.primary[850],
             },
           }
         : {
@@ -94,16 +95,16 @@ export const themeSettings = (mode) => {
             },
             secondary: {
               ...tokensLight.secondary,
-              main: tokensDark.secondary[600],
-              light: tokensDark.secondary[700],
+              main: tokensDark.secondary[800],
+              light: tokensDark.secondary[900],
             },
             neutral: {
               ...tokensLight.grey,
               main: tokensDark.grey[500],
             },
             background: {
-              default: tokensDark.grey[0],
-              alt: tokensDark.grey[50],
+              default: tokensDark.grey[50],
+              alt: tokensDark.grey[100],
             },
           }),
     },
