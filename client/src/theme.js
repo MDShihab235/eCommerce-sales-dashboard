@@ -79,11 +79,11 @@ export const themeSettings = (mode) => {
             },
             neutral: {
               ...tokensDark.grey,
-              main: tokensDark.grey[500],
+              main: tokensDark.grey[400],
             },
             background: {
-              default: tokensDark.primary[700],
-              alt: tokensDark.primary[900],
+              default: tokensDark.primary[600],
+              alt: tokensDark.primary[850],
             },
           }
         : {
