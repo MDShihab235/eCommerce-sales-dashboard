@@ -25,7 +25,6 @@ export const tokensDark = {
     600: "#193245", // manually adjusted
     700: "#141937",
     800: "#0d1025",
-    850: "090b1a",
     900: "#070812",
   },
   secondary: {
@@ -82,7 +81,7 @@ export const themeSettings = (mode) => {
               main: tokensDark.grey[400],
             },
             background: {
-              default: tokensDark.primary[850],
+              default: tokensDark.primary[800],
               alt: tokensDark.primary[700],
             },
           }
